@@ -12,6 +12,7 @@ const MainContainer = styled.div`
 
 const StarWars = () => {
     const [card, setCard]=useState([]);
+    
 
     useEffect(()=>{
         axios
@@ -22,6 +23,7 @@ const StarWars = () => {
         console.log(response.data.results)
         const cards = response.data.results;
         setCard(cards);
+       
       })
       .catch(function (error) {
         
@@ -36,6 +38,7 @@ const StarWars = () => {
     
   return <CharacterCard  key={n.name}
                   name ={n.name}
+                  
                   birth={n.birth_year}
                   gender={n.gender}
                   height={n.height}
