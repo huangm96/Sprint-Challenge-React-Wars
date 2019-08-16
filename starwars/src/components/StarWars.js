@@ -35,7 +35,9 @@ const StarWars = () => {
         <MainContainer>
 
 {card.map((n)=> {
-    
+    if(n.hair_color==="n/a"){
+      n.hair_color="none";
+    }
   return <CharacterCard  key={n.name}
                   name ={n.name}
                   

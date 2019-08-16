@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 const AppContainer = styled.div`
     max-width :100%;
+    text-align:center;
     
 `;
 const Header = styled.h1`
@@ -21,6 +22,7 @@ const App = () => {
   return (
     <AppContainer>
       <Header>React Wars</Header>
+      <h3>(Characters)</h3>
       <StarWars />
       
     </AppContainer>

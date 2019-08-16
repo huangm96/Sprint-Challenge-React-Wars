@@ -17,9 +17,7 @@ const CardName = styled.h3`
 `;
 
 const CharacterCard = (props) => {
-    // if (!props.image)
-    //     return <h3>Loading...</h3>;
-
+    
     return (
         <CardContainer>
             
@@ -28,8 +26,8 @@ const CharacterCard = (props) => {
             <p>Birth Year: {props.birth}</p>
             <p>Gender: {props.gender}</p>
             <p>Height: {props.height}</p>
-            <p>Mass:{props.mass}</p>
-            <p>Hair Color:{props.hairColor}</p>
+            <p>Mass: {props.mass}</p>
+            <p>Hair Color: {props.hairColor}</p>
             </div>
         </CardContainer>
 
