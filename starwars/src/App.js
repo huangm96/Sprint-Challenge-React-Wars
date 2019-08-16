@@ -1,6 +1,16 @@
 import React from 'react';
 import './App.css';
+import StarWars from './components/StarWars'
+import styled from 'styled-components';
 
+const AppContainer = styled.div`
+    max-width :100%;
+    text-align:center;
+    
+`;
+const Header = styled.h1`
+    text-align:center;
+`;
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -10,9 +20,12 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
-    </div>
+    <AppContainer>
+      <Header>React Wars</Header>
+      <h3>(Characters)</h3>
+      <StarWars />
+      
+    </AppContainer>
   );
 }
 
